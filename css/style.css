@@ -1,0 +1,115 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: 'Playfair Display', serif;
+}
+.header-area{
+    height: 25vh;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    clear: both;
+    
+}
+.logo{
+    flex: 1;
+}
+.logo img{
+    height: 150px;
+    width: 200px;
+}
+.nav-area{
+    flex: 1;
+    margin-top: 45px;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+}
+.nav-list a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    color: #660066;
+    
+}
+.nav-list a:hover{
+    border-bottom: 2px solid #660066;
+}
+.hero{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 75vh;
+    align-items: center;
+}
+main{
+    margin: 0 70px;
+}
+.intro{
+    flex: 1;
+}
+.intro-text h1{
+    font-size: 45px;
+    font-weight: 500;
+    background: linear-gradient(to left,#52057b,#892cdc,#bc6ff1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro-text p{
+    font-size: 20px;
+    margin-top: 12px;
+    color: #583d72;
+    background: transparent;
+}
+.button{
+    margin-top: 70px;
+}
+.kids-img{
+    flex: 1;
+}
+.kids-img img{
+    height: 52vh;
+    justify-content: right;
+    animation: kids 3.5s ease;
+}
+@keyframes kids{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.btn{
+    padding: 12px 40px;
+}
+.btn-select{
+    border: 2px solid #892cdc;
+    background: transparent;
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.btn-add{
+    border: 2px solid #892cdc;
+    background: #a585e271;
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 25px;
+}  
+.btn-select:hover{
+    background-color: #a585e271;
+}
